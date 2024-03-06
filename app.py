@@ -35,8 +35,9 @@ while True:
             average_grade = total_grades / len(grade)
             print(f"Average Grade:{average_grade} ")
     elif response == 5:
-        
-
-
+        print("Exiting App")
+        break
+    else:
+        print("Invalid Command")
 
 
