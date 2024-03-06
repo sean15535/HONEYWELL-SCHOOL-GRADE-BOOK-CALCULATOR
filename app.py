@@ -14,9 +14,20 @@ while True:
         if not grade:
             print("Gradebook is empty")
         else:
-            reply = str(input("Enter Student Name to Remove: "))
-            if reply 
-            grade.pop[reply]
-            print(f"{reply} has been removed from the GradeBook")
-        
+            student_name = str(input("Enter Student Name to Remove: "))
+            if student_name in grade:
+                grade.pop[student_name]
+                print(f"{student_name}'s grade has been  removed from the gradebook.")
+            else:
+                print(f"{student_name} does not exist in the gradebook.")
+    elif response == 3:
+        response = str(input(" Enter Student name to view grade: "))
+        if not grade:
+            print("Grade Book is empty")
+        else:
+            for key, value in grade[response]
+                print(key, value)
+    elif response == 4:
+
+
 
