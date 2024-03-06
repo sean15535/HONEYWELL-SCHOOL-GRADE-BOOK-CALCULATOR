@@ -1,6 +1,6 @@
 a gradebook calculator where teachers can input 
 student names and their corresponding grades for different subjects. 
-The program should calculate each student's average grade 
+The program should : 
  Add Student Grade
  Remove Student Grade
  View Student Grades

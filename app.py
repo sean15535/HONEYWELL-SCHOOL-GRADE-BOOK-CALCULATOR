@@ -5,7 +5,7 @@ while True:
     response = int(input(">>> "))
     if response == 1:
         student_name = str(input("Enter Student Name: "))
-        if student_name in gradebook:
+        if student_name in grade:
             print(f"Warning: {student_name} already exists in the gradebook. Overwriting grade.")
         student_grade = float(input("Enter Student Grade: "))
         grade[student_name]=student_grade
@@ -38,6 +38,6 @@ while True:
         print("Exiting App")
         break
     else:
-        print("Invalid Command")
+        print("Invalid Command, Try again")
 
 
