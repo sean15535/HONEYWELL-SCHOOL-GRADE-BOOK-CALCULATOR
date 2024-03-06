@@ -1,7 +1,7 @@
 grade={ }
 print("Welcome to Honeywell Group of School Grade Calculator")
 while True:
-    print("1. Add Student Grade.\n2. Remove Student Grade.\n3 View Student Grades.\n4. Calculate Average Grade.\n5. Exit ")
+    print("1. Add Student Grade.\n2. Remove Student Grade.\n3 View All Student and Grades.\n4. Calculate Average Grade.\n5. Exit ")
     response = int(input(">>> "))
     if response == 1:
         student_name = str(input("Enter Student Name: "))
@@ -21,13 +21,22 @@ while True:
             else:
                 print(f"{student_name} does not exist in the gradebook.")
     elif response == 3:
-        response = str(input(" Enter Student name to view grade: "))
         if not grade:
             print("Grade Book is empty")
         else:
-            for key, value in grade[response]
-                print(key, value)
+            print("Honeywell Grade Book")
+            for student_name, grades in grade.items():
+                print(f"{student_name}, {grades}")
     elif response == 4:
+        if not grade:
+            print("Grade Book is empty")
+        else:
+            total_grades = sum(grade.values())
+            average_grade = total_grades / len(grade)
+            print(f"Average Grade:{average_grade} ")
+    elif response == 5:
+        
+
 
 
 
