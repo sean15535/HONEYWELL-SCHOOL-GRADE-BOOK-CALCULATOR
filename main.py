@@ -1,4 +1,4 @@
-from functions import grade_calculator, greetings
+from functions import grade_calculator, greetings, add_student, remove_student_grade
 grade = {}
 
 print("Welcome to Honeywell Group of School Grade Calculator")
@@ -10,15 +10,7 @@ while True:
     if response == 1:
         add_student()
     elif response == 2:
-        if not grade:
-            print("Gradebook is empty")
-        else:
-            student_name = str(input("Enter Student Name to Remove: "))
-            if student_name in grade:
-                grade.pop(student_name) 
-                print(f"{student_name}'s grade has been removed from the gradebook.")
-            else:
-                print(f"{student_name} does not exist in the gradebook.")
+        remove_student_grade()
     elif response == 3:
         if not grade:
             print("Grade Book is empty")

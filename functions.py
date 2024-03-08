@@ -19,3 +19,14 @@ def add_student():
         student_grade = float(input("Enter Student Grade: "))
         grade[student_name] = student_grade
     return f"{student_name} with grade {student_grade} has been added to the Gradebook"
+
+def remove_student_grade():
+    if not grade:
+        print("Gradebook is empty")
+    else:
+        student_name = str(input("Enter Student Name to Remove: "))
+        if student_name in grade:
+            grade.pop(student_name) 
+            print(f"{student_name}'s grade has been removed from the gradebook.")
+        else:
+            return f"{student_name} does not exist in the gradebook."
